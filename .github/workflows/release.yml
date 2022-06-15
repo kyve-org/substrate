@@ -25,16 +25,16 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: kyve-substrate-linux
-          path: ./out/substrate-linux
+          name: checksum.txt
+          path: ./out/checksum.txt
       - uses: actions/upload-artifact@v3
         with:
-          name: kyve-substrate-macos
-          path: ./out/substrate-macos
+          name: kyve-linux
+          path: ./out/kyve-linux
       - uses: actions/upload-artifact@v3
         with:
-          name: kyve-substrate-win
-          path: ./out/substrate-win.exe
+          name: kyve-macos
+          path: ./out/kyve-macos
 
   docker:
     name: Build and publish Docker container.
