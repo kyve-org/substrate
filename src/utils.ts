@@ -30,6 +30,7 @@ async function requestSidecarAPI(endpoint: string, signature: Signature) {
       'Public-Key': signature.pubKey,
       'Pool-ID': signature.poolId,
       Timestamp: signature.timestamp,
+      "Content-Type": "application/json",
     },
   });
 
