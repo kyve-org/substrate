@@ -26,11 +26,11 @@ export function isHeightOutOfRange(err: any): boolean {
 async function requestSidecarAPI(endpoint: string, signature: Signature) {
   const { data } = await axios.get(endpoint, {
     headers: {
+      'Content-Type': 'application/json',
       Signature: signature.signature,
       'Public-Key': signature.pubKey,
       'Pool-ID': signature.poolId,
       Timestamp: signature.timestamp,
-      "Content-Type": "application/json",
     },
   });
 
