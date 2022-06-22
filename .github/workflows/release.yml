@@ -64,7 +64,7 @@ jobs:
       - name: Install yarn.
         run: npm install -g yarn
       - name: Install dependencies.
-        run: yarn install
+        run: yarn add webhook-discord
 
       - name: Run script.
         run: DISCORD=${{ secrets.DISCORD }} VERSION=${GITHUB_REF#refs/tags/} node .github/webhook.js

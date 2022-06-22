@@ -1,6 +1,6 @@
 {
   "name": "@kyve/substrate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
@@ -29,7 +29,6 @@
     "pkg": "^5.7.0",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.3",
-    "webhook-discord": "^3.7.8"
+    "typescript": "^4.7.4"
   }
 }
